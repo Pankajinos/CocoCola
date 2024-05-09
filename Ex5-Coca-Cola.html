@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Single+Day&display=swap');
+    </style>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Redressed&family=Single+Day&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Single+Day&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Single+Day&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Single+Day&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+    </style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            position: sticky;
+            top: 0px;
+        }
+
+        nav {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            background-color: rgb(255, 255, 255);
+            border-bottom: 1px solid;
+
+        }
+
+        header nav ul {
+            display: flex;
+            font-family: "Zilla Slab", serif, "Single Day";
+            align-self: right;
+            padding-bottom: 10px;
+            padding-top: 10px;
+            margin: 0;
+        }
+
+        header nav ul li {
+            list-style: none;
+            font-size: 20px;
+            padding-inline: 23px;
+
+        }
+
+        .content {
+            margin-inline: 5vw;
+        }
+
+        .boxes {
+            display: flex;
+            margin-block: 10vh;
+            justify-content: center;
+            gap: 34px;
+            flex-wrap: wrap;
+        }
+
+        .box {
+            /* height: 70vh; */
+            width: 400px;
+            
+            /* margin: 5vh 20px; */
+            background-color: rgb(186, 26, 26);
+            box-shadow: 2px 2px 2px;
+            text-align: center;
+            border-radius: 6px;
+            
+        }
+        .box img {
+            width: 400px;
+            height: 300px;
+            object-fit: cover;
+            object-position: center;
+            border-radius: 6px 6px 0px 0px;
+
+        }
+        
+        
+
+        .box h2,
+        .box p {
+            padding-inline:40px;
+
+        }
+
+
+        .note {
+
+            border: 2px dashed black;
+            border-radius: 20px;
+           
+            margin: auto;
+            font-family: "Zilla Slab";
+            color: rgb(100, 100, 100);
+            padding: 20px 10px;
+            justify-content: center;
+        }
+
+        .note::first-line {
+            font-size: 40px;
+            color: black;
+
+        }
+
+        .fa:hover {
+            opacity: 1;
+            box-shadow: inset 2px 2px 4px white;
+        }
+
+
+
+        .sticker {
+            height: 80px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+
+        }
+
+        footer {
+            background-color: brown;
+            margin-top: 20vh;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+
+        .address-div {
+            padding: 10px;
+            font-family: "Zilla Slab";
+            font-style: italic;
+            color: aliceblue;
+            display: flex;
+            justify-content: space-between;
+            padding: 5vw 10vw;
+        }
+
+        
+
+        footer ul {
+            list-style: none;
+            display: flex;
+        }
+
+        footer div ul li {
+            padding: 12px;
+            font-size: 30px;
+
+        }
+
+        .fa {
+            text-decoration: none;
+            width: 30px;
+            height: 30px;
+            padding: 10px;
+            background-color: black;
+            text-align: center;
+
+            border-radius: 50%;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #ff00ee;
+            color: white;
+        }
+
+        .fa-whatsapp {
+            background-color: rgb(6, 219, 6);
+            color: white;
+        }
+
+        h2,
+        footer {
+            font-family: Redressed;
+
+        }
+
+        .social {
+            font-size: 20px;
+        }
+
+        .social-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-block: 30px;
+
+
+        }
+    </style>
+    <header>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <nav>
+            <img height="70px" src="coca_cola.jpeg.png" alt="Coca-Cola Logo">
+            <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Products</li>
+                <li>Contact</li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="content">
+        <div class="boxes">
+            <!-- Content for Box 1 -->
+            <div class="box">
+                <img src="https://marketingweek.imgix.net/content/uploads/2021/04/19161107/Coca-Cola-cans-on-brick.png?auto=compress,format&q=60&w=736&h=429"
+                    alt="Coca-Cola Classic">
+                <h2>Coca-Cola Classic</h2>
+                <p>The original and iconic Coca-Cola taste.Timeless flavor loved worldwide. Iconic original taste.</p>
+
+            </div>
+            <!-- Content for Box 2 -->
+            <div class="box">
+                <img src="https://s.yimg.com/ny/api/res/1.2/Xt4HXXOZVsrQFqGkmFIzoQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTM2MA--/https://media.zenfs.com/en/gobankingrates_644/2afc0ebc2a13c7132a21889e2bb0c0b9"
+                    alt="Coca-Cola Zero Sugar">
+                <h2>Coca-Cola Zero Sugar</h2>
+                <p>All the great taste of Coca-Cola with zero sugar.Same great taste, zero sugar content.Sugar-free alternative with full Coca-Cola taste.</p>
+            </div>
+            <div class="box">
+                <img src="https://www.coca-cola.com/content/dam/onexp/ca/en/brands/coca-cola/products/coca-cola-spiced/coca-cola-landing/en-spiced-landing.jpg"
+                    alt="Coca-Cola Zero Sugar">
+                <h2>Coca-Cola Zero Sugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sit pariatur quibusdam suscipit laboriosam eveniet! Nobis iusto ad sapiente modi iste eum architecto?</p>
+            </div>
+            <div class="box">
+                <img src="https://www.shutterstock.com/image-photo/poznan-poland-jan-19-2017-600nw-561637555.jpg"
+                    alt="Coca-Cola Zero Sugar">
+                <h2>Coca-Cola Zero Sugar</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, sit pariatur quibusdam suscipit laboriosam eveniet! Nobis iusto ad sapiente modi iste eum architecto?</p>
+            </div>
+        </div>
+        <div class="note">
+            <h2>Welcome to Coca-Cola</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed dictum velit a quam pulvinar, a interdum
+                ipsum feugiat. Nulla facilisi. Suspendisse potenti. Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum iure repellendus rem, nesciunt ad quis rerum delectus esse maxime accusantium at! Omnis cupiditate deserunt quibusdam similique aut officiis reprehenderit odio et vel repudiandae dignissimos soluta dolorem suscipit magnam numquam eveniet impedit dolore quae amet dolores, tenetur, ducimus molestiae corrupti. Porro alias quos ipsum? Blanditiis corporis id amet pariatur cupiditate delectus velit ad sit repudiandae. Magnam dolorem nemo, obcaecati eligendi numquam, asperiores iure suscipit quasi ipsum nobis voluptatibus neque! Molestias inventore rem unde sequi. Minus dolores nisi, vel ipsum hic vero dolorem voluptas mollitia beatae assumenda perspiciatis. Quas optio obcaecati dolore debitis cupiditate tempore atque. Dolor enim dolores animi ipsa. Placeat mollitia molestiae corporis aperiam expedita magni ex nam! Iure consequatur molestias reiciendis quas aut, saepe ipsam totam corrupti, harum repudiandae dolores neque, corporis ut rerum non cupiditate perspiciatis! Aperiam architecto quis quas vitae velit placeat quod dolor, ullam facere impedit tempora eius quaerat soluta totam numquam voluptas laudantium, magni dolores repellendus vel perferendis odio sunt! Omnis et in quas rerum perferendis? Ratione beatae odio ipsam tempore explicabo quidem voluptatibus facere excepturi quaerat maiores. Amet illum minus impedit doloremque quas. Temporibus numquam repudiandae optio. Atque, eligendi fuga nemo libero dolor recusandae odio voluptatem aspernatur voluptatibus deleniti veniam quidem modi obcaecati rerum eaque ratione provident et. Accusantium quaerat magnam consectetur atque, a esse dicta iste laudantium expedita nam dolores? Aut reiciendis commodi quos, quis perspiciatis delectus est dolorem fugiat impedit nesciunt temporibus explicabo accusantium quia a, eum libero fuga, nulla sapiente qui non sunt omnis distinctio maiores ex. Architecto porro ad a suscipit dicta molestias ipsa assumenda reprehenderit rerum beatae tempore atque sapiente, ut nemo deserunt deleniti, aut eius, vel explicabo dignissimos labore alias libero sequi voluptatem! Eum similique, aliquam ad eveniet ab esse, animi accusamus nihil assumenda quae quis quas pariatur adipisci! Tempore, vitae repellat rerum deserunt illo ipsa debitis aspernatur eum, repudiandae earum corporis, dignissimos excepturi pariatur quisquam perspiciatis illum delectus maxime aut. Officia nesciunt consectetur, totam labore alias laborum fuga praesentium hic enim sapiente magnam dolore officiis! Maxime nesciunt nostrum distinctio impedit unde ut!</p>
+        </div>
+
+    </div>
+
+    <footer>
+        <div class="address-div">
+            <div class="address">
+                <p>For inquiries, please contact us at:</p>
+                <p>Phone: 1-800-COCA-COLA</p>
+                <p>Email: info@coca-cola.com</p>
+                <p>Address: 123 Coca-Cola Ave, Atlanta, GA, USA</p>
+            </div>
+
+            <img width="80px"
+                src="https://media2.giphy.com/media/fSSz61v2KcV8dOBSlb/giphy.gif?cid=6c09b9526gqiaqyo9otbd2rhtp6fyrdxkf8zymg4sntiw3pj&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s"
+                alt="">
+
+        </div>
+        <div class="border">
+        </div>
+
+        <div class="social-footer">
+            <p class="social">Follow us on social media:</p>
+            <ul>
+                <li><a href="#" class="fa fa-facebook"></a></li>
+                <li><a href="#" class="fa fa-instagram"></a></li>
+                <li><a href="#" class="fa fa-twitter"></a></li>
+                <li><a href="#" class="fa fa-whatsapp"></a></li>
+            </ul>
+        </div>
+    </footer>
